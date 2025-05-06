@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Sudhanshu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/887f85a5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" id="menu-icon" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Engineer</p>
+                <h1>Hi, I'm <span>Sudhanshu</span><br> Sreedhara Belavarthy <br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a curious and creative individual passionate about 
+                        technology, innovation, and lifelong learning. With a keen 
+                        interest in AI, software development, and problem-solving, 
+                        I enjoy building projects that make life easier and more exciting. 
+                        I believe in working smart, staying positive, and continuously 
+                        growing both personally and professionally. When I’m not coding or 
+                        exploring new tech, you’ll find me gaming, watching sci-fi, or 
+                        brainstorming new ideas. I value honesty, teamwork, and self-expression, 
+                        and I’m always open to new challenges and opportunities. Let’s build 
+                        something amazing together!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>AI/ML</span><br>Chatbot Development</li>
+                                <li><span>UI/UX</span><br>Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id ="experience">
+                            <ul>
+                                <li><span>Intern - AI Developer</span><br>Built and deployed ML models for chatbot automation at XYZ Corp (2024)</li>
+                                <li><span>Frontend Developer</span><br>Created responsive UI for a college event website (2023)</li>
+                                <li><span>Project Lead</span><br>Led a team in building an IoT-based smart energy monitor (2023–24)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>Bachelor's in Computer Science</span><br>ABC University (2021–2025)</li>
+                                <li><span>Machine Learning Course</span><br>Completed ML specialization on Coursera by Andrew Ng (2023)</li>
+                                <li><span>Full Stack Web Dev Bootcamp</span><br>Completed intensive training on HTML, CSS, JS, and backend (2022)</li>
+                            </ul>
+                        </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------Services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-bots"></i>
+                    <h2>Chatbot</h2>
+                    <p>I have experience building intelligent chatbots using Python, 
+                        with knowledge of libraries like NLTK and Transformers. 
+                        I can design chatbots with distinct personalities 
+                        (e.g., friendly, sarcastic) and integrate them into interactive 
+                        UIs using Streamlit. My focus is on creating engaging, 
+                        responsive, and customizable chatbot experiences.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in designing clean, responsive, and user-friendly 
+                        websites using HTML, CSS, and JavaScript. I focus on elegant 
+                        UI/UX design, ensuring cross-device compatibility and modern 
+                        aesthetics. I also integrate tools and frameworks to enhance 
+                        performance and interactivity.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Video Editing</h2>
+                    <p>I have skills in video editing using tools like Adobe Premiere Pro,
+                         Filmora, and CapCut. I can create smooth cuts, transitions, 
+                         add effects, background music, and sync visuals with audio to 
+                         produce professional-quality videos for YouTube, social media, and 
+                         presentations..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Portfolio----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class = "work-list">
+                <div class="work">
+                    <img src="images/work 1.png">
+                    <div class="layer">
+                        <h3>Offline Chatbot</h3>
+                        <p>Built a chatbot using Python and NLTK, capable of offline conversations. 
+                            Integrated with a simple UI using Streamlit for user interaction.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 2.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Developed a fully responsive e-commerce platform using HTML, CSS, 
+                            JavaScript, and PHP. Features include product listings, cart system, and secure 
+                            checkout functionality.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 3.jpeg">
+                    <div class="layer">
+                        <h3>PHEG Project</h3>
+                        <p>Engineered a Piezo Hydro Electric Generator system that generates electricity from 
+                            pressure and water flow. Integrated real-time monitoring and device-level energy 
+                            tracking using AI and ML.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>                
+            </div>
+            <a href "#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <!--------------------Contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>belavarthy.sudhanshu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8660916859</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/lingpie_san"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/19kuTxbdYW/"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/devsudhanshu-bel"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sudhanshu-sreedhara-belavarthy-33a5b9350/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Sudhanshu-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Sudhanshu. Made with <i class="fa-solid fa-heart"></i> by HTML, CSS, JS</p>
+        </div>
+    </div>
+    
+    
+    <script>    
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <form name="submit-to-google-sheet">
+        
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzeRDMj6GiXlrZ2z68_RndUM_qDUd2B0UcGL3fUOw7tw4DSB0qpOh6q7igQRYmtPpKxlw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
